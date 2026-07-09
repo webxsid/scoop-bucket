@@ -1,0 +1,27 @@
+{
+  "version": "1.6.2",
+  "description": "local-first work tracker for developers",
+  "homepage": "https://crona.work",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/webxsid/crona/releases/download/v1.6.2/crona-bundle-1.6.2-windows-amd64.zip",
+      "hash": "1e74c87078f29c7877e0ec731cf2a74fa26c6e132b58bf5bd494f1564bf10c11"
+    },
+    "arm64": {
+      "url": "https://github.com/webxsid/crona/releases/download/v1.6.2/crona-bundle-1.6.2-windows-arm64.zip",
+      "hash": "a623c3845536fe7159ea2655dedcaa3458b5ad44568582785d963d8cbd6445a1"
+    }
+  },
+  "post_install": [
+    "$runtimeDir = Join-Path $env:LOCALAPPDATA 'Crona'",
+    "New-Item -ItemType Directory -Force -Path $runtimeDir | Out-Null",
+    "$installRecord = @{ installSource = 'scoop'; releaseChannel = 'stable' } | ConvertTo-Json -Compress",
+    "Set-Content -Path (Join-Path $runtimeDir 'install.json') -Value $installRecord -NoNewline"
+  ],
+  "bin": [
+    "crona.exe",
+    "crona-daemon.exe",
+    "crona-tui.exe"
+  ]
+}
