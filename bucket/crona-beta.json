@@ -1,16 +1,16 @@
 {
-  "version": "1.9.0-beta.8",
+  "version": "1.9.0-beta.9",
   "description": "local-first work tracker for developers",
   "homepage": "https://crona.work",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/webxsid/crona/releases/download/v1.9.0-beta.8/crona-bundle-1.9.0-beta.8-windows-amd64.zip",
-      "hash": "f309521d7789b39f45bfe82881fb9c34402c7d8c8ee8f2039cb5f51b6f769bd5"
+      "url": "https://github.com/webxsid/crona/releases/download/v1.9.0-beta.9/crona-bundle-1.9.0-beta.9-windows-amd64.zip",
+      "hash": "a4bcfd7d5a3e2a6f154fb205904735bce273cc83d4bac85dd442b827e9a212b3"
     },
     "arm64": {
-      "url": "https://github.com/webxsid/crona/releases/download/v1.9.0-beta.8/crona-bundle-1.9.0-beta.8-windows-arm64.zip",
-      "hash": "9be1ae9551a3d1380a6ad2ec9d3de5c6a06ed680ca2bdb8b8882d38fd3605dbe"
+      "url": "https://github.com/webxsid/crona/releases/download/v1.9.0-beta.9/crona-bundle-1.9.0-beta.9-windows-arm64.zip",
+      "hash": "41b6ee7fc76b0283b053108d4d21a9a549d0d2cca2346900e0bcba99c78c4ece"
     }
   },
   "post_install": [
